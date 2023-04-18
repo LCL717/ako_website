@@ -1,5 +1,12 @@
-# 软件工程的复习——设计模式
+---
+title: "软件工程的复习——设计模式"
+date: 2023-04-15T16:36:49-04:00
+draft: false
 
+tags: ["Developments"]
+categories: ["Software Engineering"]
+
+---
  
 # Design Patterns 设计模式
 
@@ -230,7 +237,7 @@ Define the skeleton of an algorithm in an operation, deferring some steps to sub
 - ConcreteClass (MyApplication)
   - **implements** the primitive operations to carry out subclass-specific steps of the algorithm.
 
-## Key Points
+### Key Points
 
 1. How to vary steps in template method subclass. 
 

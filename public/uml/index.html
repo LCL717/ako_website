@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>UML——Class Diagrams - Ako 的个人空间</title><meta name="Description" content="这是我的全新 Hugo 网站"><meta property="og:title" content="UML——Class Diagrams" />
+<meta property="og:description" content="Class Diagrams A dass diagram describes the types of objects in the System and the various kinds of static relationships that exist among them. 类图描述了系统中对象的类型以及它们之间存在的各种静态关系。 Attributes 特性 The attribute notation describes a property as a line of text within the class" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/uml/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-16T16:04:59-04:00" />
+<meta property="article:modified_time" content="2023-04-16T16:04:59-04:00" /><meta property="og:site_name" content="Ako的网站" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="UML——Class Diagrams"/>
+<meta name="twitter:description" content="Class Diagrams A dass diagram describes the types of objects in the System and the various kinds of static relationships that exist among them. 类图描述了系统中对象的类型以及它们之间存在的各种静态关系。 Attributes 特性 The attribute notation describes a property as a line of text within the class"/>
+<meta name="application-name" content="Ako的个人空间">
+<meta name="apple-mobile-web-app-title" content="Ako的个人空间"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/uml/" /><link rel="prev" href="http://example.org/first_post/" /><link rel="next" href="http://example.org/requirement/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "UML——Class Diagrams",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/uml\/"
+        },"genre": "posts","keywords": "Developments","wordcount":  906 ,
+        "url": "http:\/\/example.org\/uml\/","datePublished": "2023-04-16T16:04:59-04:00","dateModified": "2023-04-16T16:04:59-04:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Ako Chen"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Ako 的个人空间">Ako&#39;s blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Ako 的个人空间">Ako&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">UML——Class Diagrams</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Ako Chen</a></span>&nbsp;<span class="post-category">included in <a href="/categories/software-engineering/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Software Engineering</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-04-16">2023-04-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;906 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#attributes-特性">Attributes 特性</a></li>
+    <li><a href="#associations-关系">Associations 关系</a></li>
+    <li><a href="#multiplicity-多重性">Multiplicity 多重性</a></li>
+    <li><a href="#generalization-继承">Generalization 继承？</a></li>
+    <li><a href="#aggregation-and-composition-聚合和组合">Aggregation and Composition 聚合和组合</a></li>
+    <li><a href="#interfaces-and-abstract-classes-接口和抽象类">Interfaces and Abstract Classes 接口和抽象类</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="class-diagrams">Class Diagrams</h1>
+<p>A dass diagram describes the types of objects in the System and the various kinds of static relationships that exist among them.</p>
+<p>类图描述了系统中对象的类型以及它们之间存在的各种静态关系。</p>
+<h2 id="attributes-特性">Attributes 特性</h2>
+<p>The attribute notation describes a property as a line of <strong>text within the class box</strong> itself. The full form of an attribute is:</p>
+<p><code>visibility name: type multiplicity = default {property-string}</code></p>
+<p>访问控制符（visibility） + 属性名称（name） + 冒号（:）+ 属性类型（type）+ 多重性（multiplicity）+ 等号（=）+ 默认值（default）+ 花括号（{}）+ 属性字符串（property-string）</p>
+<ul>
+<li>This visibility marker indicates whether the attribute is public (+) or private (-);</li>
+<li>The name of the attribute - how the class refers to the attribute - roughly corresponds to the name of a field in a programming language.
+属性的名称（attribute name）指的是类如何引用该属性，大致对应于编程语言中字段（field）的名称。</li>
+<li>The type of the attribute indicates a restriction an <strong>what kind of object</strong>（string, int, bool, etc.） may be placed in the attribute. You can think of this as the type of a field in a programming language.</li>
+<li>The default value is the value for a newly created object if the attribute isn&rsquo;t specified during creation.</li>
+<li>The {property-string} allows you to indicate additional properties for the attribute. In the example, I used {readOnly} to indicate that clients may not modify the property. If this is missing, you can usually assume that the attribute is modifiable.</li>
+</ul>
+<p>An example of this is:</p>
+<p><code>name: String [1] = &quot;Untitled&quot; {readOnly}</code></p>
+<p><em>Only the <strong>name</strong> is necessary.</em></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.postimg.cc/kXNf4MMT/Screenshot-2023-04-16-at-9-27-11-PM.png"
+        data-srcset="https://i.postimg.cc/kXNf4MMT/Screenshot-2023-04-16-at-9-27-11-PM.png, https://i.postimg.cc/kXNf4MMT/Screenshot-2023-04-16-at-9-27-11-PM.png 1.5x, https://i.postimg.cc/kXNf4MMT/Screenshot-2023-04-16-at-9-27-11-PM.png 2x"
+        data-sizes="auto"
+        alt="https://i.postimg.cc/kXNf4MMT/Screenshot-2023-04-16-at-9-27-11-PM.png"
+        title="Screenshot-2023-04-16-at-9-27-11-PM.png" /></p>
+<h2 id="associations-关系">Associations 关系</h2>
+<p>An association is a <strong>solid line</strong> between two classes, directed from the source class to the target class.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.postimg.cc/WpCQr4vj/Screenshot-2023-04-16-at-9-25-55-PM.png"
+        data-srcset="https://i.postimg.cc/WpCQr4vj/Screenshot-2023-04-16-at-9-25-55-PM.png, https://i.postimg.cc/WpCQr4vj/Screenshot-2023-04-16-at-9-25-55-PM.png 1.5x, https://i.postimg.cc/WpCQr4vj/Screenshot-2023-04-16-at-9-25-55-PM.png 2x"
+        data-sizes="auto"
+        alt="https://i.postimg.cc/WpCQr4vj/Screenshot-2023-04-16-at-9-25-55-PM.png"
+        title="Screenshot-2023-04-16-at-9-25-55-PM.png" /></p>
+<h2 id="multiplicity-多重性">Multiplicity 多重性</h2>
+<p>The multiplicity of a property is an indication of how many objects may fill the property. The most common multiplicities you will see are:</p>
+<ol>
+<li><strong>1</strong> (An order must have exactly one customer.)</li>
+<li><strong>0..1</strong> (A corporate customer may or may not have a single sales rep.)</li>
+<li><strong>*</strong> (A customer need not place an Order and there is no upper limit to the number of Orders a Customer may place-zero or more orders.)</li>
+</ol>
+<p>More generally, multiplicities are defined with a <font color="red"><strong>lower bound</strong></font> and an <font color="red"><strong>upper bound</strong></font>. The lower bound may beany positive number or zero; the upper is any positive number or <code>*</code> (for unlimited). If the lower and upper bounds are the same, you can use one number; hence, <code>1</code> is equivalent to <code>1..1</code>.Because it&rsquo;s a common case, <code>*</code> is short for <code>0..*</code>.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.postimg.cc/1zbpBb5g/Screenshot-2023-04-16-at-9-29-31-PM.png"
+        data-srcset="https://i.postimg.cc/1zbpBb5g/Screenshot-2023-04-16-at-9-29-31-PM.png, https://i.postimg.cc/1zbpBb5g/Screenshot-2023-04-16-at-9-29-31-PM.png 1.5x, https://i.postimg.cc/1zbpBb5g/Screenshot-2023-04-16-at-9-29-31-PM.png 2x"
+        data-sizes="auto"
+        alt="https://i.postimg.cc/1zbpBb5g/Screenshot-2023-04-16-at-9-29-31-PM.png"
+        title="Screenshot-2023-04-16-at-9-29-31-PM.png" /></p>
+<h2 id="generalization-继承">Generalization 继承？</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.postimg.cc/gcsxkfFv/Screenshot-2023-04-16-at-9-34-02-PM.png"
+        data-srcset="https://i.postimg.cc/gcsxkfFv/Screenshot-2023-04-16-at-9-34-02-PM.png, https://i.postimg.cc/gcsxkfFv/Screenshot-2023-04-16-at-9-34-02-PM.png 1.5x, https://i.postimg.cc/gcsxkfFv/Screenshot-2023-04-16-at-9-34-02-PM.png 2x"
+        data-sizes="auto"
+        alt="https://i.postimg.cc/gcsxkfFv/Screenshot-2023-04-16-at-9-34-02-PM.png"
+        title="Screenshot-2023-04-16-at-9-34-02-PM.png" /></p>
+<h2 id="aggregation-and-composition-聚合和组合">Aggregation and Composition 聚合和组合</h2>
+<ul>
+<li>
+<p>聚合是一种关系，其中一个对象包含对另一个对象的引用，但被包含的对象可以独立于容器对象而存在。换句话说，<strong>被包含的对象并不是容器对象所拥有的</strong>。聚合通常用一个指向被包含类的菱形表示，例如汽车和其轮子之间的关系。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.postimg.cc/50XRY5Y1/Screenshot-2023-04-16-at-9-08-34-PM.png"
+        data-srcset="https://i.postimg.cc/50XRY5Y1/Screenshot-2023-04-16-at-9-08-34-PM.png, https://i.postimg.cc/50XRY5Y1/Screenshot-2023-04-16-at-9-08-34-PM.png 1.5x, https://i.postimg.cc/50XRY5Y1/Screenshot-2023-04-16-at-9-08-34-PM.png 2x"
+        data-sizes="auto"
+        alt="https://i.postimg.cc/50XRY5Y1/Screenshot-2023-04-16-at-9-08-34-PM.png"
+        title="Screenshot-2023-04-16-at-9-08-34-PM.png" /></p>
+</li>
+<li>
+<p>组合是一种关系，<strong>其中一个对象拥有另一个对象</strong>，并且所拥有的对象的生命周期与拥有对象的生命周期相同。换句话说，被拥有的对象不能在没有拥有它的对象的情况下存在。组合通常用一个填充的菱形表示，例如汽车和其引擎之间的关系。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.postimg.cc/rs8RZj12/Screenshot-2023-04-16-at-9-11-02-PM.png"
+        data-srcset="https://i.postimg.cc/rs8RZj12/Screenshot-2023-04-16-at-9-11-02-PM.png, https://i.postimg.cc/rs8RZj12/Screenshot-2023-04-16-at-9-11-02-PM.png 1.5x, https://i.postimg.cc/rs8RZj12/Screenshot-2023-04-16-at-9-11-02-PM.png 2x"
+        data-sizes="auto"
+        alt="https://i.postimg.cc/rs8RZj12/Screenshot-2023-04-16-at-9-11-02-PM.png"
+        title="Screenshot-2023-04-16-at-9-11-02-PM.png" /></p>
+</li>
+</ul>
+<h2 id="interfaces-and-abstract-classes-接口和抽象类">Interfaces and Abstract Classes 接口和抽象类</h2>
+<ul>
+<li>
+<p>An abstract class is a class that cannot be directly instantiated. The most common way to indicate an abstract dass or operation in the UML is to <font color="red"><em>italicize</em></font> the name, you can also use the label : <code>{abstract}</code> .</p>
+</li>
+<li>
+<p>An interface is a class that has <font color="red"><strong>no</strong></font> implementation ; that is, all its features are abstract. You mark an interface with the key-word <code>&lt;&lt;interface&gt;&gt;</code>.</p>
+</li>
+</ul>
+<h1 id="object-diagrams">Object Diagrams</h1>
+<p>An object diagram is a snapshot of the objects in a System at a point in time. Because it Shows instances rather than classes, an object diagram is often called an <strong>instance diagram</strong>.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.postimg.cc/BvwBPXKG/Screenshot-2023-04-16-at-9-58-03-PM.png"
+        data-srcset="https://i.postimg.cc/BvwBPXKG/Screenshot-2023-04-16-at-9-58-03-PM.png, https://i.postimg.cc/BvwBPXKG/Screenshot-2023-04-16-at-9-58-03-PM.png 1.5x, https://i.postimg.cc/BvwBPXKG/Screenshot-2023-04-16-at-9-58-03-PM.png 2x"
+        data-sizes="auto"
+        alt="https://i.postimg.cc/BvwBPXKG/Screenshot-2023-04-16-at-9-58-03-PM.png"
+        title="Screenshot-2023-04-16-at-9-58-03-PM.png" /></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-04-16</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/uml/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://example.org/uml/" data-title="UML——Class Diagrams" data-hashtags="Developments"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://example.org/uml/" data-hashtag="Developments"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://example.org/uml/" data-title="UML——Class Diagrams"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://example.org/uml/" data-title="UML——Class Diagrams"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://example.org/uml/" data-title="UML——Class Diagrams"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href=""></a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/first_post/" class="prev" rel="prev" title="软件工程的复习——设计模式"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>软件工程的复习——设计模式</a>
+            <a href="/requirement/" class="next" rel="next" title="Requirement Engineering">Requirement Engineering<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

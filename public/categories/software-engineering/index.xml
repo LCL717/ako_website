@@ -1,12 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Ako 的个人空间</title>
-        <link>http://example.org/</link>
-        <description>这是我的全新 Hugo 网站</description>
+        <title>Software Engineering - Category - Ako 的个人空间</title>
+        <link>http://example.org/categories/software-engineering/</link>
+        <description>Software Engineering - Category - Ako 的个人空间</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>akochen123666@gmail.com (Ako Chen)</managingEditor>
-            <webMaster>akochen123666@gmail.com (Ako Chen)</webMaster><lastBuildDate>Mon, 17 Apr 2023 20:54:29 -0400</lastBuildDate>
-            <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
-        <item>
+            <webMaster>akochen123666@gmail.com (Ako Chen)</webMaster><lastBuildDate>Mon, 17 Apr 2023 20:54:29 -0400</lastBuildDate><atom:link href="http://example.org/categories/software-engineering/" rel="self" type="application/rss+xml" /><item>
     <title>Requirement Engineering</title>
     <link>http://example.org/requirement/</link>
     <pubDate>Mon, 17 Apr 2023 20:54:29 -0400</pubDate>
