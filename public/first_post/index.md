@@ -230,7 +230,7 @@ Define the skeleton of an algorithm in an operation, deferring some steps to sub
 - ConcreteClass (MyApplication)
   - **implements** the primitive operations to carry out subclass-specific steps of the algorithm.
 
-## Key Points
+### Key Points
 
 1. How to vary steps in template method subclass. 
 
