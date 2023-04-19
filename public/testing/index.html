@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/example.org\/testing\/"
-        },"genre": "posts","keywords": "Developments","wordcount":  452 ,
+        },"genre": "posts","keywords": "Developments","wordcount":  876 ,
         "url": "http:\/\/example.org\/testing\/","datePublished": "2023-04-17T23:01:02-04:00","dateModified": "2023-04-17T23:01:02-04:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -103,8 +103,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Verification & Validation and Testing</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Ako Chen</a></span>&nbsp;<span class="post-category">included in <a href="/categories/software-engineering/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Software Engineering</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-04-17">2023-04-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;452 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-04-17">2023-04-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;876 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="true">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -126,6 +126,26 @@
             <li><a href="#failure">Failure</a></li>
             <li><a href="#error">Error</a></li>
             <li><a href="#fault">Fault</a></li>
+          </ul>
+        </li>
+        <li><a href="#testing-and-debugging">Testing and debugging</a>
+          <ul>
+            <li><a href="#debugging-activities">Debugging Activities</a></li>
+          </ul>
+        </li>
+        <li><a href="#testing-activities">Testing Activities</a></li>
+        <li><a href="#testing-strategy">Testing Strategy</a>
+          <ul>
+            <li><a href="#black-box-testing">Black-box Testing</a></li>
+            <li><a href="#white-box-testing">White-box testing</a></li>
+            <li><a href="#code-coverage">Code Coverage</a>
+              <ul>
+                <li><a href="#statement-coverage-语句覆盖">Statement coverage 语句覆盖</a></li>
+                <li><a href="#branchedge-coverage-分支覆盖">Branch/Edge coverage 分支覆盖</a></li>
+                <li><a href="#condition-coverage-条件覆盖">Condition coverage 条件覆盖</a></li>
+                <li><a href="#path-coverage-路径覆盖">Path coverage 路径覆盖</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
@@ -211,6 +231,71 @@
 <p>An error is a <font color = "red"><strong>state</strong></font> of the system which, in the absence of any corrective action, could lead to a failure.</p>
 <h4 id="fault">Fault</h4>
 <p>An <font color = "red"><strong>adjudged cause</strong></font> of an error. 故障的原因</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/LCL717/images/main/images/20230418152744.png"
+        data-srcset="https://raw.githubusercontent.com/LCL717/images/main/images/20230418152744.png, https://raw.githubusercontent.com/LCL717/images/main/images/20230418152744.png 1.5x, https://raw.githubusercontent.com/LCL717/images/main/images/20230418152744.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/LCL717/images/main/images/20230418152744.png"
+        title="20230418152744" /></p>
+<h3 id="testing-and-debugging">Testing and debugging</h3>
+<p><font color = "red">Testing</font> is concerned with confirming the <strong>presence</strong> of errors. <font color = "red">Debugging</font> is concerned with <strong>locating and repairing</strong> these errors</p>
+<h4 id="debugging-activities">Debugging Activities</h4>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/LCL717/images/main/images/20230418154821.png"
+        data-srcset="https://raw.githubusercontent.com/LCL717/images/main/images/20230418154821.png, https://raw.githubusercontent.com/LCL717/images/main/images/20230418154821.png 1.5x, https://raw.githubusercontent.com/LCL717/images/main/images/20230418154821.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/LCL717/images/main/images/20230418154821.png"
+        title="20230418154821" /></p>
+<h3 id="testing-activities">Testing Activities</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/LCL717/images/main/images/20230418155634.png"
+        data-srcset="https://raw.githubusercontent.com/LCL717/images/main/images/20230418155634.png, https://raw.githubusercontent.com/LCL717/images/main/images/20230418155634.png 1.5x, https://raw.githubusercontent.com/LCL717/images/main/images/20230418155634.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/LCL717/images/main/images/20230418155634.png"
+        title="20230418155634" /></p>
+<h3 id="testing-strategy">Testing Strategy</h3>
+<h4 id="black-box-testing">Black-box Testing</h4>
+<p>Approach to testing where the program is considered as a ‘black-box’</p>
+<ul>
+<li>
+<p>The program test cases are based on the system specification. Test case是基于系统说明书</p>
+</li>
+<li>
+<p>Test planning can begin early in the software process.可以在早期开始</p>
+</li>
+<li>
+<p>Possible test design strategy 一种可能的设计策略</p>
+<ul>
+<li>Equivalence partitioning <strong>等价划分</strong>是一种测试设计策略，它将软件系统的输入数据划分为具有相似行为的组或等价类。这种方法的目标是减少测试系统所需的测试用例数量，同时确保覆盖所有重要的情景。</li>
+</ul>
+</li>
+</ul>
+<h4 id="white-box-testing">White-box testing</h4>
+<ul>
+<li>Derivation of test cases according to program structure. Knowledge of the program is used to identify additional test cases. 根据程序结构推导测试用例。这种策略利用对程序内部结构和代码逻辑的了解，来识别额外的测试用例。</li>
+<li>Possible test design strategy
+<ul>
+<li>Equivalence partitioning</li>
+<li>Code coverage</li>
+</ul>
+</li>
+</ul>
+<h4 id="code-coverage">Code Coverage</h4>
+<h5 id="statement-coverage-语句覆盖">Statement coverage 语句覆盖</h5>
+<p>Select a test set T such that by executing P for each case in T, each statement of P is executed at least once.</p>
+<p>测试集合T中的测试用例可以使P中的每个statement执行至少一次</p>
+<h5 id="branchedge-coverage-分支覆盖">Branch/Edge coverage 分支覆盖</h5>
+<p>Select a set T such that, by executing P for each member in T, each edge of P’s control-flow graph is traversed at least once.</p>
+<h5 id="condition-coverage-条件覆盖">Condition coverage 条件覆盖</h5>
+<p>All possible values of the constituents of compound conditions are exercised at least once.</p>
+<h5 id="path-coverage-路径覆盖">Path coverage 路径覆盖</h5>
+<p>Select a test set T such that, by executing P for each member of T, <strong>all paths</strong> leading <strong>from the initial node to the final node</strong> of P’s control-flow graph are traversed.</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
