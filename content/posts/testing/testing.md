@@ -98,3 +98,20 @@ Select a set T such that, by executing P for each member in T, each edge of P’
 All possible values of the constituents of compound conditions are exercised at least once.
 ##### Path coverage 路径覆盖
 Select a test set T such that, by executing P for each member of T, **all paths** leading **from the initial node to the final node** of P’s control-flow graph are traversed.
+
+### quiz
+
+1. What is the difference between **acceptance** and **system** testing?
+- Acceptance Testing: focus on customers' requirements.
+- System Testing: considers the system design.<br><br>
+
+2. What is the key benefit of unit testing as compared to system testing?
+
+    **Error localization**<br><br>
+
+3. What is the difference between black-box and white box testing?
+
+    **Black-box** tests are designed with respect to requirements and interfaces; **white-box** tests take design and implementation into account.
+
+4. What is structural coverage?
+    Structural coverage is the coverage of design and code. (white box)

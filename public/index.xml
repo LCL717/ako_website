@@ -4,9 +4,25 @@
         <link>http://example.org/</link>
         <description>这是我的全新 Hugo 网站</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>akochen123666@gmail.com (Ako Chen)</managingEditor>
-            <webMaster>akochen123666@gmail.com (Ako Chen)</webMaster><lastBuildDate>Mon, 17 Apr 2023 23:01:02 -0400</lastBuildDate>
+            <webMaster>akochen123666@gmail.com (Ako Chen)</webMaster><lastBuildDate>Wed, 19 Apr 2023 15:12:12 -0400</lastBuildDate>
             <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Modularity</title>
+    <link>http://example.org/modularity/</link>
+    <pubDate>Wed, 19 Apr 2023 15:12:12 -0400</pubDate>
+    <author>Ako Chen</author>
+    <guid>http://example.org/modularity/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Architecture</title>
+    <link>http://example.org/architecture/</link>
+    <pubDate>Tue, 18 Apr 2023 22:55:34 -0400</pubDate>
+    <author>Ako Chen</author>
+    <guid>http://example.org/architecture/</guid>
+    <description><![CDATA[Layered Architecture 分层架构 Each layer represents a level of abstraction or specificity Provides higher-level services to the layer above it Relies on lower-level services from the layer below it Pure Form: Only Adjacent Layers Communicate. 只有相同的层之间可以通信。 Pros: Abstraction: One layer builds on another. Portability: Lower-level layers can be easily replaced. Cons: Performance: Communicating through layers.]]></description>
+</item>
+<item>
     <title>Verification &amp; Validation and Testing</title>
     <link>http://example.org/testing/</link>
     <pubDate>Mon, 17 Apr 2023 23:01:02 -0400</pubDate>
